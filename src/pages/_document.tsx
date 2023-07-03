@@ -1,5 +1,5 @@
 // pages/_document.tsx file
-import Document, { DocumentContext } from 'next/document';
+import Document, { DocumentContext, Head, Html } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx: DocumentContext) {
@@ -16,9 +16,14 @@ export default class MyDocument extends Document {
 				...initialProps,
 				styles: (
 					<>
-						{initialProps.styles}
-						{/*👇 insert the collected styles to the html document*/}
-						{sheet.getStyleElement()}
+						<Html lang='pt-br'>
+							{/* <Head/> */}
+							{/* <body> */}
+							{initialProps.styles}
+							{/*👇 insert the collected styles to the html document*/}
+							{sheet.getStyleElement()}
+							{/* </body> */}
+						</Html>
 					</>
 				),
 			};
