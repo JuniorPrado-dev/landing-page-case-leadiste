@@ -1,13 +1,15 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import styled from 'styled-components';
 
-export const HeaderStyled=styled.header`
+export const ContainerStyled=styled.div`
     display: flex;
+    background-color:#F0FFEE;
     align-items: center;
     justify-content: center;
-    padding: 2vw;
-    height: 3vw;
+    width: 100%;
+    height: 30vw;
 `;
-export const LogoStyled=styled.img`
-    height: 80%;
+
+export const ImageTextStyled=styled.img`
+    height: 60%;
 `;
