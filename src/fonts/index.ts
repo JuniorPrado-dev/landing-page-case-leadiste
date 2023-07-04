@@ -1,4 +1,4 @@
-import localFont from '@next/font/local';
+import localFont from 'next/font/local';
 export const pacifico=localFont({
 	src:'../../public/assets/fonts/Pacifico-Regular.ttf',
 	weight:'400',
