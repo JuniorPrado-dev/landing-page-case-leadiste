@@ -1,5 +1,6 @@
 import Header from '@/componentes/header';
 import Marketing from '@/componentes/marketing';
+import Menu from '@/componentes/menu';
 import Head from 'next/head';
 
 export default function Home(){
@@ -13,6 +14,7 @@ export default function Home(){
 		</Head>
 		<Header/>
 		<Marketing/>
+		<Menu/>
 		
 	</>;
 }

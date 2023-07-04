@@ -7,9 +7,9 @@ export const ContainerStyled=styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 30vw;
+    height: 25vw;
 `;
 
 export const ImageTextStyled=styled.img`
-    height: 60%;
+    height: 65%;
 `;

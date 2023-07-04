@@ -5,7 +5,7 @@ export const HeaderStyled=styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2vw;
+    padding: 1vw;
     height: 2.5vw;
 `;
 export const LogoStyled=styled.div`
@@ -26,6 +26,6 @@ export const LogoSymbolStyled=styled.img`
     animation: ${rotate} 4s linear infinite  ;
 `;
 export const LogoTextStyled=styled.img`
-    height: 60%;
+    height: 50%;
     margin-left:.5rem;
 `;
