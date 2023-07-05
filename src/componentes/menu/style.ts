@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import { TPropsPageStyled } from '@/types';
 import styled from 'styled-components';
 
-export const MenuStyled=styled.div`
+export const MenuStyled = styled.div`
     display: flex;
     width: 65vw;
     margin: 0 auto;
@@ -13,7 +14,8 @@ export const MenuStyled=styled.div`
     height: 2.5vw;
     border-bottom: solid 1px #0084ff;
 `;
-export const MenuItemStyled=styled.div`
+export const MenuItemStyled = styled.div<TPropsPageStyled>`
+    
     border: solid 0.15vw black;
     border-radius: 1vw;
     padding: 0.3vw 0.5vw;
@@ -21,6 +23,18 @@ export const MenuItemStyled=styled.div`
     border-radius: 1vw;
     padding: 0.3vw 0.5vw;
     margin-right: 0.6vw;
+    
+    background-color:${props => {
+		if (props.selected === props.id) {
+			return '#0093FF';
+		}
+	}} ;
+    border-color:${props => {
+		if (props.selected === props.id) {
+			return '#0093FF';
+		}
+	}} ;
+
     &:hover{
         border-color:#0093FF;
         color:#0093FF ;
@@ -30,8 +44,16 @@ export const MenuItemStyled=styled.div`
         background-color: #0093FF;
         color: white;
     }
+
+    p{
+        color:${props => {
+		if (props.selected === props.id) {
+			return '#FFFFFF';
+		}
+	}};
+    }
 `;
-export const MenuItemTextStyled=styled.p`
+export const MenuItemTextStyled = styled.p`
     font-size: 1vw;
     font-weight: 600;
     font-family: var(--font-plusJ-variable);

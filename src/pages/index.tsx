@@ -3,8 +3,10 @@ import MarketingDigital from '@/componentes/maketing-digital';
 import Marketing from '@/componentes/marketing';
 import Menu from '@/componentes/menu';
 import Head from 'next/head';
+import { useState } from 'react';
 
 export default function Home(){
+	const [section,setSection]=useState(0);
 	return <>
 		<Head>
 			<title>LandingPage</title>
@@ -13,9 +15,10 @@ export default function Home(){
 			<meta name="viewport" content="width=device-width, initial-scale=1" />
 			<link rel="icon" href="/assets/images/asset-header.png" />
 		</Head>
-		<Header/>
+		<Header/>	
 		<Marketing/>
-		<Menu/>
+		<Menu section={section} setSection={setSection} />
+
 		<MarketingDigital/>
 	</>;
 }
