@@ -23,6 +23,7 @@ export const MenuItemStyled=styled.div`
     &:hover{
         border-color:#0093FF;
         color:#0093FF ;
+        cursor: pointer;
     }
     &:active{
         background-color: #0093FF;

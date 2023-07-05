@@ -1,4 +1,5 @@
 import Header from '@/componentes/header';
+import MarketingDigital from '@/componentes/maketing-digital';
 import Marketing from '@/componentes/marketing';
 import Menu from '@/componentes/menu';
 import Head from 'next/head';
@@ -12,9 +13,9 @@ export default function Home(){
 			<meta name="viewport" content="width=device-width, initial-scale=1" />
 			<link rel="icon" href="/assets/images/asset-header.png" />
 		</Head>
-		<Header/>
+		{/* <Header/>
 		<Marketing/>
-		<Menu/>
-		
+		<Menu/> */}
+		<MarketingDigital/>
 	</>;
 }
