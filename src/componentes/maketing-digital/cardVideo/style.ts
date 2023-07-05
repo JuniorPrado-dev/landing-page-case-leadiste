@@ -13,7 +13,7 @@ export const CardVideoStyled=styled.div`
     height: auto;
     transition-duration: 0.5s;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
-    box-shadow: 2px 5px 10px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 5px 10px 3px rgba(0, 0, 0, 0.5);
     &:hover{
         height: 110%;
         width: 110%;
@@ -21,14 +21,15 @@ export const CardVideoStyled=styled.div`
 `;
 
 export const BoxVideoStyled=styled.div`
+    text-align: center;
     position: relative;
     height:max-content;
     width: 100%;
 `;
 export const VideoStyled=styled.iframe`
-    position: relative;
+    /* position: relative; */
     height:max-content;
-    width: 100%;
+    width: 98%;
 `;
 export const BoxSelectVideoStyled=styled.div`
     display: flex;

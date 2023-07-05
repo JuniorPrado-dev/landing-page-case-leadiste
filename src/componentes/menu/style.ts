@@ -5,6 +5,7 @@ export const MenuStyled=styled.div`
     display: flex;
     width: 65vw;
     margin: 0 auto;
+    margin-bottom: 2vw;
     align-items: center;
     justify-content: start;
     padding-top: 3vw;
