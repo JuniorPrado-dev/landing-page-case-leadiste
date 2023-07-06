@@ -3,6 +3,7 @@ import MainContext from '@/componentes/main-content';
 import Banner from '@/componentes/banner';
 import Head from 'next/head';
 import Business from '@/componentes/busines';
+import Footer from '@/componentes/footer';
 export default function Home(){
 	
 
@@ -18,5 +19,6 @@ export default function Home(){
 		<Banner/>
 		<MainContext/>
 		<Business/>
+		<Footer/>
 	</>;
 }
