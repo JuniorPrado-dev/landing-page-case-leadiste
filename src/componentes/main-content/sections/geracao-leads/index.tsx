@@ -13,14 +13,14 @@ export default function GeracaoLeads({videos}:TPropsLeads):JSX.Element{
 	const videosPage=videos.slice(((page)*9),(page+1)*9);
 	
 	return(
-		<S.MarketingStyled>
-			<S.VideosMarketingStyled>
+		<S.ContainerStyled>
+			<S.VideoListStyled>
 				{videosPage.map((video,index)=>{
 					return <CardVideo setVideoModal={setVideoModal} key={index} video={video}/>;
 				})}
-			</S.VideosMarketingStyled>
+			</S.VideoListStyled>
 			<Modal video={videoModal} setVideoModal={setVideoModal}/>
 			<MenuPages page={page} setPage={setPage} numberPages={Math.ceil(videos.length/9)}/>
-		</S.MarketingStyled>
+		</S.ContainerStyled>
 	);   
 }

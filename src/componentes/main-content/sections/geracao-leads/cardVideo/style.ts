@@ -18,6 +18,13 @@ export const CardVideoStyled=styled.div`
         height: 110%;
         width: 110%;
     }
+     //para mobiles
+     @media (max-width: 400px) {
+        &:hover{
+            height: auto;
+            width: auto;
+        }
+    }
 `;
 
 export const BoxVideoStyled=styled.div`
@@ -25,6 +32,7 @@ export const BoxVideoStyled=styled.div`
     position: relative;
     height:max-content;
     width: 100%;
+    
 `;
 export const VideoStyled=styled.iframe`
     /* position: relative; */
@@ -50,15 +58,28 @@ export const BoxSelectVideoStyled=styled.div`
             opacity: 1;
         }
     }
+    
     `;
+
 export const IconPlayStyled=styled.img`
     height: 45%;
     opacity: 0;
 `;
+
+
 export const TitleVideoStyled=styled.p`
     position: relative;
     font-size: 1vw;
     font-weight: 600;
     padding:1vw;
     font-family: var(--font-plusJ-variable);
+    //para mobiles
+    @media (max-width: 400px) {
+        position: relative;
+        font-size: 3vw;
+        font-weight: 600;
+        padding:1vw;
+        font-family: var(--font-plusJ-variable);
+
+    }
 `;
