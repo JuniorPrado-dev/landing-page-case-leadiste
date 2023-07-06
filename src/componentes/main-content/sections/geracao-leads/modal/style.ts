@@ -27,11 +27,29 @@ export const CardVideoStyled=styled.div`
     background-color: white;
     border-radius: 0.6vw;
     padding: 1% 0;
+    //para mobiles
+    @media (max-width: 400px) {        
+        position: absolute;
+        top:2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 3;
+        width: 90%;
+        height: 80%;
+        background-color: white;
+        border-radius: 0.6vw;
+        padding: 1% 0;
+    }
     `;
 
 export const VideoStyled=styled.iframe`
     height:50%;
     width: 100%;
+    //para mobiles
+    @media (max-width: 400px) {        
+    }
     `;
 
 export const TitleModalStyled=styled.h1`
@@ -43,6 +61,11 @@ export const TitleModalStyled=styled.h1`
     span{
         color:#0084ff;
     }
+    //para mobiles
+    @media (max-width: 400px) {        
+        width: 90%;
+        font-size:4vw;
+    }
 `;
 
 export const TitleInfoStyled=styled.h2`
@@ -51,6 +74,10 @@ export const TitleInfoStyled=styled.h2`
     font-weight: bolder;
     font-family: var(--font-plusJ-variable);
     border-bottom: 0.2px solid rgba(0,0,0,0.3);
+    //para mobiles
+    @media (max-width: 400px) {        
+        font-size: 3vw;
+    }
     `;
 export const TextInfoStyled=styled.p`
     text-align: justify;
@@ -58,6 +85,9 @@ export const TextInfoStyled=styled.p`
     font-size: 0.9VW;
     font-weight: 600;
     font-family: var(--font-plusJ-variable);
+    @media (max-width: 400px) {        
+        font-size: 3vw;
+    }
 `;
 export const ImageDownloadsStyled=styled.img`
     width: 85%;
