@@ -21,6 +21,7 @@ export const BoxNumberStyled=styled.div<TPropsPageStyled>`
     margin:0 0.2vw;
     &:hover{
         border: 0.2vw solid #0084ff;
+        cursor: pointer;
     }
 `;
 
