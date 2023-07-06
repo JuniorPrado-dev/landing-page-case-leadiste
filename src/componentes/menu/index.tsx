@@ -2,7 +2,7 @@ import { TPropsMenu } from '@/types';
 import * as S from './style';
 import * as F from '@/fonts';
 import Sorting from '../sorting';
-export default function Menu({section,setSection}:TPropsMenu): JSX.Element {
+export default function Menu({videos, setVideos, section,setSection}:TPropsMenu): JSX.Element {
 	return (
 		<S.MenuStyled className={F.plusVariable.variable}>
 			<>
@@ -22,7 +22,7 @@ export default function Menu({section,setSection}:TPropsMenu): JSX.Element {
 					<S.MenuItemTextStyled>Midia Page</S.MenuItemTextStyled>
 				</S.MenuItemStyled>
 			</>
-			{section===4 && <Sorting/>}			
+			{section===4 && <Sorting setVideos={setVideos} videos={videos}/>}			
 		</S.MenuStyled>
 	);
 }

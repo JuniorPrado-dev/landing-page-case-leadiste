@@ -26,13 +26,24 @@ export type TPropsModalStyled={
 
 export type TPropsMenu={
     setSection:Dispatch<SetStateAction<number>>;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    setVideos:Dispatch<SetStateAction<any>>;
     section: number;
+    videos:TVideo[];
+}
+export type TPropsSorting={
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    setVideos:Dispatch<SetStateAction<any>>;
+    videos:TVideo[];
 }
 
 export type TPropsMenuPage={
     setPage:Dispatch<SetStateAction<number>>;
     page: number;
     numberPages: number;
+}
+export type TPropsLeads={
+    videos:TVideo[];
 }
 
 export type TPropsPageStyled={
