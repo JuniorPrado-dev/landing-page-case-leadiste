@@ -22,4 +22,8 @@ export const TextStyled = styled.h2`
     font-size: 2vw;
     font-weight: 600;
     font-family: var(--font-plusJ-variable);
+    //para mobiles
+    @media (max-width: 400px) {        
+        font-size: 3vw;
+    }
 `;
