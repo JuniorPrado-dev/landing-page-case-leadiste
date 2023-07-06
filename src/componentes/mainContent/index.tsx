@@ -1,9 +1,9 @@
-import Agencias from '@/sections/agencias';
+import Agencias from './sections/agencias';
 import data from '@/data/data.json';
-import ChatBot from '@/sections/chatbot';
-import GeracaoLeads from '@/sections/geracao-leads';
-import MarketingDigital from '@/sections/marketing-digital';
-import MidiaPage from '@/sections/midia-page';
+import ChatBot from './sections/chatbot';
+import GeracaoLeads from './sections/geracao-leads';
+import MarketingDigital from './sections/marketing-digital';
+import MidiaPage from './sections/midia-page';
 import Menu from '@/componentes/menu';
 import { useState } from 'react';
 import { TVideo } from '@/types';
@@ -15,7 +15,6 @@ export default function MainContext(): JSX.Element {
 	const [videos,setVideos]=useState(dataVideos);
 	//inicia na seção de videos
 	const [section, setSection] = useState(4);
-	console.log({videos});
 	let sectionContext;
 	switch (section) {
 	case 1:

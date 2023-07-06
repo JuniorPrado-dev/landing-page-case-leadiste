@@ -23,7 +23,7 @@ export default function Sorting ({videos,setVideos}:TPropsSorting):JSX.Element{
 				const dateA=new Date(a.date);
 				const dateB=new Date(b.date);
 				setVideos(arrayTemp);
-				return dateA<dateB?-1:dateA>dateB?1:0;   
+				return dateA>dateB?-1:dateA<dateB?1:0;   
 			});
 			break;
 		}
