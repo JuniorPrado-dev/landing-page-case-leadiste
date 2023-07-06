@@ -1,5 +1,5 @@
 import * as S from './style';
-export default function Marketing(): JSX.Element {
+export default function Business(): JSX.Element {
 	return (
 		<S.ContainerStyled>
 			<S.ImageTextStyled src='/assets/images/text.svg'/>

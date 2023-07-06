@@ -1,6 +1,6 @@
 import Header from '@/componentes/header';
 import MainContext from '@/componentes/main-content';
-import Marketing from '@/componentes/marketing';
+import Banner from '@/componentes/banner';
 import Head from 'next/head';
 export default function Home(){
 	
@@ -14,7 +14,7 @@ export default function Home(){
 			<link rel="icon" href="/assets/images/asset-header.png" />
 		</Head>
 		<Header/>	
-		<Marketing/>
+		<Banner/>
 		<MainContext/>
 	</>;
 }
