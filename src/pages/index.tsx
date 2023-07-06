@@ -1,36 +1,9 @@
-import Agencias from '@/componentes/agencias';
-import ChatBot from '@/componentes/chatbot';
-import GeracaoLeads from '@/componentes/geracao-leads';
 import Header from '@/componentes/header';
+import MainContext from '@/componentes/mainContent';
 import Marketing from '@/componentes/marketing';
-import MarketingDigital from '@/componentes/marketing-digital';
-import Menu from '@/componentes/menu';
-import MidiaPage from '@/componentes/midia-page';
 import Head from 'next/head';
-import { useState } from 'react';
-
 export default function Home(){
-	//inicia na seção de videos
-	const [section,setSection]=useState(4);
 	
-	let sectionContext;
-	switch(section){
-	case 1:
-		sectionContext=<Agencias/>;
-		break;
-	case 2:
-		sectionContext=<ChatBot/>;
-		break;
-	case 3:
-		sectionContext=<MarketingDigital/>;
-		break;
-	case 4:
-		sectionContext=<GeracaoLeads/>;
-		break;
-	case 5:
-		sectionContext=<MidiaPage/>;
-		break;
-	}
 
 	return <>
 		<Head>
@@ -42,7 +15,6 @@ export default function Home(){
 		</Head>
 		<Header/>	
 		<Marketing/>
-		<Menu section={section} setSection={setSection} />
-		{sectionContext}
+		<MainContext/>
 	</>;
 }

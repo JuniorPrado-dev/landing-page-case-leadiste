@@ -37,7 +37,7 @@ export const VideoStyled=styled.iframe`
 export const TitleModalStyled=styled.h1`
     text-align: justify;
     width: 80%;
-    font-size:120%;
+    font-size:1.6vw;
     font-weight: 600;
     font-family: var(--font-plusJ-variable);
     span{
@@ -46,7 +46,7 @@ export const TitleModalStyled=styled.h1`
 `;
 
 export const TitleInfoStyled=styled.h2`
-    font-size: 100%;
+    font-size: 1vw;
     width: 90%;
     font-weight: bolder;
     font-family: var(--font-plusJ-variable);
@@ -55,7 +55,7 @@ export const TitleInfoStyled=styled.h2`
 export const TextInfoStyled=styled.p`
     text-align: justify;
     width: 90%;
-    font-size: 80%;
+    font-size: 0.9VW;
     font-weight: 600;
     font-family: var(--font-plusJ-variable);
 `;

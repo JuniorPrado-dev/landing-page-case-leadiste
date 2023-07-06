@@ -16,7 +16,7 @@ export const MenuStyled = styled.div`
 `;
 export const MenuItemStyled = styled.div<TPropsPageStyled>`
     
-    border: solid 0.15vw black;
+    border: solid 0.1vw black;
     border-radius: 1vw;
     padding: 0.3vw 0.5vw;
     margin-right: 0.6vw;
