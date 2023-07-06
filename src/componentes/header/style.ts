@@ -7,6 +7,10 @@ export const HeaderStyled=styled.header`
     justify-content: center;
     padding: 1vw;
     height: 2.5vw;
+    //para mobiles
+    @media (max-width: 400px) {
+        height: 8vw;
+    }
 `;
 export const LogoStyled=styled.div`
     display:flex ;
