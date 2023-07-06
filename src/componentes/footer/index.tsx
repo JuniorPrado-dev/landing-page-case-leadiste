@@ -18,11 +18,13 @@ export default function Footer(): JSX.Element {
 					</S.TrStyled>
 				</thead>
 				<tbody>
-
 					<S.TrStyled>
 						<S.TdStyled><Link href="/">Home</Link></S.TdStyled>
 						<S.TdStyled><Link href="">Geração de Leads B2B</Link></S.TdStyled>
 						<S.TdStyled><Link href="">Blog</Link></S.TdStyled>
+						<S.TdStyled rowSpan={4}>
+							<S.ImageStyled src="/assets/images/contatos.png" />
+						</S.TdStyled>
 					</S.TrStyled>
 					<S.TrStyled>
 						<S.TdStyled><Link href="">Ferramenta</Link></S.TdStyled>

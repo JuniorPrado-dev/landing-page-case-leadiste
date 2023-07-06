@@ -6,7 +6,7 @@ export const ContainerStyled = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 65vw;
+    width: 100vw;
     height: fit-content;
     background-color:#FFFFFF;
     padding: 5vw 0;
@@ -14,6 +14,9 @@ export const ContainerStyled = styled.div`
     `;
 
 export const ImageStyled = styled.img`
+    width:18vw;
+    `;
+export const SmallImageStyled = styled.img`
     width:18vw;
     `;
 
@@ -27,7 +30,7 @@ export const SmallTextStyled = styled.p`
     `;
 
 export const TableLinksStyled = styled.table`
-    width: 100%;
+    width: 80%;
     margin-top:2vw;
     font-size: 1.3vw;
     font-weight: 500;
