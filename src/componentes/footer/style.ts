@@ -15,6 +15,10 @@ export const ContainerStyled = styled.div`
 
 export const ImageStyled = styled.img`
     width:18vw;
+    //para mobiles
+    @media (max-width: 400px) {        
+        width:35vw;
+    }
     `;
 export const SmallImageStyled = styled.img`
     width:18vw;
@@ -27,6 +31,10 @@ export const SmallTextStyled = styled.p`
         font-weight: 800;
     }
     font-family: var(--font-plusJ-variable);
+    //para mobiles
+    @media (max-width: 400px) {        
+        font-size: 2vw;
+    }
     `;
 
 export const TableLinksStyled = styled.table`
@@ -35,17 +43,29 @@ export const TableLinksStyled = styled.table`
     font-size: 1.3vw;
     font-weight: 500;
     font-family: var(--font-plusJ-variable);
+    //para mobiles
+    @media (max-width: 400px) {        
+        width: 95%;
+    }
     `;
 export const TrStyled = styled.tr`
     width: 100%;
     font-size: 1.3vw;
     font-weight: 500;
     font-family: var(--font-plusJ-variable);
+    //para mobiles
+    @media (max-width: 400px) {        
+        font-size: 3vw;
+    }
     `;
 export const ThStyled = styled.th`
     font-size: 1.3vw;
     font-weight: 800;
     font-family: var(--font-plusJ-variable);
+    //para mobiles
+    @media (max-width: 400px) {        
+        font-size: 3vw;
+    }
     `;
 export const TdStyled = styled.td`
     a{
@@ -56,4 +76,8 @@ export const TdStyled = styled.td`
     font-size: 1.3vw;
     font-weight: 500;
     font-family: var(--font-plusJ-variable);
+    //para mobiles
+    @media (max-width: 400px) {        
+        font-size: 2vw;
+    }
     `;
