@@ -12,4 +12,8 @@ export const ContainerStyled=styled.div`
 
 export const ImageTextStyled=styled.img`
     height: 65%;
+    //para mobiles
+    @media (max-width: 400px) {
+        height: 95%;
+    }
 `;
