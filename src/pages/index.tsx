@@ -1,5 +1,5 @@
 import Header from '@/componentes/header';
-import MainContext from '@/componentes/mainContent';
+import MainContext from '@/componentes/main-content';
 import Marketing from '@/componentes/marketing';
 import Head from 'next/head';
 export default function Home(){
