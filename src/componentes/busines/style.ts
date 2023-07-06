@@ -9,10 +9,25 @@ export const ContainerStyled=styled.div`
     width: 100%;
     padding: 5vw 0;
     height: fit-content;
+    //para mobiles
+    @media (max-width: 400px) {        
+        display: flex;
+        flex-direction: column;
+        background-color:#F0F8FF;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 5vw 0;
+        height: fit-content;
+    }
 `;
 
 export const ImageStyled=styled.img`
     width:40%;
+    //para mobiles
+    @media (max-width: 400px) {        
+        width:70%;
+    }
 `;
 export const InfoStyled=styled.div`
     display: flex;
@@ -28,6 +43,11 @@ export const BigTextStyled = styled.p`
         font-weight: 800;
     }
     font-family: var(--font-plusJ-variable);
+    //para mobiles
+    @media (max-width: 400px) {        
+        font-size: 6vw;
+    }
+    
     `;
 export const TextStyled = styled.p`
     font-size: 1.8vw;
@@ -37,6 +57,10 @@ export const TextStyled = styled.p`
         font-weight: 800;
     }
     font-family: var(--font-plusJ-variable);
+    //para mobiles
+    @media (max-width: 400px) {        
+        font-size: 3vw;
+    }
     `;
 
 export const ContainerVStyled=styled.div`
@@ -44,6 +68,10 @@ export const ContainerVStyled=styled.div`
     flex-direction: column;
     margin-left: 2vw;
     width: 40%;
+    //para mobiles
+    @media (max-width: 400px) {        
+        width:80%;
+    }
 `;
 export const ContainerHStyled=styled.div`
     display: flex;
@@ -64,10 +92,28 @@ export const ButtonStyled=styled.button`
         font-size: 1.6vw;
         cursor: pointer;
     }
+    //para mobiles
+    @media (max-width: 400px) {        
+        background-color: #0083ff;
+        padding:1.5vw ;
+        font-size: 3vw;
+        border-radius: 2vw;
+        text-transform: uppercase;
+        font-family: var(--font-plusJ-variable);
+        color: white;
+        &:hover{
+            font-size: 3vw;
+            cursor: pointer;
+        }
+    }
     `;
 
 export const SmallImageStyled=styled.img`
     height:1.3vw;
+    //para mobiles
+    @media (max-width: 400px) {        
+        height:2.4vw;
+    }
 `;
 export const SmallTextStyled = styled.p`
     font-size: 1vw;
@@ -76,4 +122,8 @@ export const SmallTextStyled = styled.p`
         font-weight: 800;
     }
     font-family: var(--font-plusJ-variable);
+    //para mobiles
+    @media (max-width: 400px) {        
+        font-size: 2vw;
+    }
     `;
