@@ -4,25 +4,32 @@ import styled from 'styled-components';
 
 export const SortingStyled = styled.div`
     display: flex;
-    width: 65vw;
-    margin: 0 auto;
-    margin-bottom: 2vw;
     align-items: center;
-    justify-content: start;
+    justify-content: end;
+    width: fit-content;
+    margin-left: 5.5vw;
+    margin-bottom: 2vw;
     padding-top: 3vw;
     padding-bottom: 1vw;
     height: 2.5vw;
-    border-bottom: solid 1px #0084ff;
 `;
 
+export const TextSelectStyled = styled.p`
+    font-size: 1vw;
+    font-weight: 600;
+    margin-right: 0.6vw;
+    font-family: var(--font-plusJ-variable);
+`;
 export const SelectStyled = styled.select`
     font-size: 1vw;
     font-weight: 600;
+    padding: 0.5vw;
     font-family: var(--font-plusJ-variable);
+    border-radius: 0.5vw;
 `;
 
-export const OpitionStyled = styled.option`
-    font-size: 1vw;
+export const OptionStyled = styled.option`
+    padding: 1vw;
     font-weight: 600;
     font-family: var(--font-plusJ-variable);
 `;

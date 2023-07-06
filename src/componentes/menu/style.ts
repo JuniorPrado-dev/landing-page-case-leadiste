@@ -4,14 +4,14 @@ import styled from 'styled-components';
 
 export const MenuStyled = styled.div`
     display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 2.5vw;
     width: 65vw;
     margin: 0 auto;
     margin-bottom: 2vw;
-    align-items: center;
-    justify-content: start;
     padding-top: 3vw;
     padding-bottom: 1vw;
-    height: 2.5vw;
     border-bottom: solid 1px #0084ff;
 `;
 export const MenuItemStyled = styled.div<TPropsPageStyled>`
@@ -23,7 +23,6 @@ export const MenuItemStyled = styled.div<TPropsPageStyled>`
     border-radius: 1vw;
     padding: 0.3vw 0.5vw;
     margin-right: 0.6vw;
-    
     background-color:${props => {
 		if (props.selected === props.id) {
 			return '#0093FF';
