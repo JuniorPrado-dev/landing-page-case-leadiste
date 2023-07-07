@@ -90,7 +90,7 @@ Certifique-se de ter as seguintes ferramentas instaladas:
     │ ├── types # diretório dos arquivos com as tipagens utilizadas no projeto. 
 ```
 ## Deployer
-- O projeto esta disponíve para visulização no seguinte link: `https://landing-page-case-leadste.vercel.app/`
+- O projeto esta disponíve para visulização no seguinte link: `https://landing-page-case-leadste.vercel.app`
 ## Contato
 Se você tiver alguma dúvida ou sugestão, entre em contato:
 
