@@ -1,5 +1,5 @@
 # Nome do Projeto
-- Landing Page Leadst  
+- Landing Page Leadster  
 ## Descrição
 - O projeto foi desenvolvido em React utilizando o framework NextJS 13. O projeto resume-se em uma Landing Page com algumas informações sobre a empresa Leadster. Até o presente commite cosnta o desenvolvimento de uma galeria de vídeos a partir de URLs armazenada em um arquivo.json, e o layout geral da página. Por tanto, algumas seções e links não estarão disponíveis. 
 ## Recursos
