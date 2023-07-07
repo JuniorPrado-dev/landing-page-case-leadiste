@@ -4,7 +4,7 @@ import * as F from '@/fonts';
 export default function Footer(): JSX.Element {
 	return (
 		<S.ContainerStyled className={F.plusVariable.variable}>
-			<S.ImageStyled src="/assets/images/logo.png" />
+			<S.ImageStyled alt={'logo leadster'} src="/assets/images/logo.png" />
 			<S.SmallTextStyled>
         Transformando visitantes em clientes.
 			</S.SmallTextStyled>
@@ -23,7 +23,7 @@ export default function Footer(): JSX.Element {
 						<S.TdStyled><Link href="">Geração de Leads B2B</Link></S.TdStyled>
 						<S.TdStyled><Link href="">Blog</Link></S.TdStyled>
 						<S.TdStyled rowSpan={4}>
-							<S.ImageStyled src="/assets/images/contatos.png" />
+							<S.ImageStyled alt={'contatos'} src="/assets/images/contatos.png" />
 						</S.TdStyled>
 					</S.TrStyled>
 					<S.TrStyled>

@@ -1,38 +1,98 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nome do Projeto
+- Landing Page Leadst  
+## Descrição
+- O projeto foi desenvolvido em React utilizando o framework NextJS 13. O projeto resume-se em uma Landing Page com algumas informações sobre a empresa Leadster. Até o presente commite cosnta o desenvolvimento de uma galeria de vídeos a partir de URLs armazenada em um arquivo.json, e o layout geral da página. Por tanto, algumas seções e links não estarão disponíveis. 
+## Recursos
+- Componenntização: Componetização de elementos da tela utilizandom React (JSX).
+- Styled-Components: Estilização de componentes através de CSS mesclado com JS para a criação de elementos personalizados.
+- Typescript: Uso de Typesript (V5) para a escrit.
+- Eslint: Uso de Padronização de escrita e espaçamento do projeto.
+- Renderização condicinal: Renderização condicinal de componentes baseando-se em estados dinamicos de variáveis.
+- Responsividade: O projeto oferece dois layouts que se ajustam conforme o viewort(tamanho da tela) dos dispositivos(mobile/Desktop) que irão acessar a aplicação.
+- Deploy: Deploy da aplicaçãso Next.js na plataforma Vercel.
 
-## Getting Started
+## Requisitos de Instalação
 
-First, run the development server:
+Certifique-se de ter as seguintes ferramentas instaladas:
+- Node.js - [Download Node.js](https://nodejs.org)
+- npm - Gerenciador de pacotes do Node.js (normalmente vem com o Node.js)
+## Como Iniciar o Projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone este repositório: `https://github.com/JuniorPrado-dev/landing-page-case-leadste.git`
+2. Acesse o diretório do projeto: `cd landing-page-case-leadste`
+3. Instale as dependências: `npm install`
+4. Inicie o servidor de desenvolvimento: `npm run dev`
+5. Abra o navegador e acesse: `http://localhost:3000`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estrutura
+- O Projeto foi escrito seguindo a estrutua de componetização, tendo como principal driretório '**src**'. Os arquivo de imagens e outros arquivos estáticos estão localizados no dirwtório '**Public**'. Segue a estrurua de diretórios apartir de src.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+├── src
+    └──
+    │ ├── components # Componentes que seram usados no layout
+    |     ├── bannner
+    |     |     ├── index.tsx
+    |     |     ├── style.ts
+    |     ├── busines
+    |     |     ├── index.tsx
+    |     |     ├── style.ts
+    |     ├── footer
+    |     |     ├── index.tsx
+    |     |     ├── style.ts
+    |     ├── header
+    |     |     ├── index.tsx
+    |     |     ├── style.ts
+    |     ├── main-content
+    |     |     ├── index.tsx
+    |     |     ├── style.ts
+    |     |     ├── main-content
+    |     |     |   ├── sections
+    |     |     |   |   ├── agencia
+    |     |     |   |   |  ├── index.tsx
+    |     |     |   |   |  ├── style.ts
+    |     |     |   |   ├── chatbot
+    |     |     |   |   |  ├── index.tsx
+    |     |     |   |   |  ├── style.ts
+    |     |     |   |   ├── geracao-leads
+    |     |     |   |   |  ├── card-video
+    |     |     |   |   |  |  ├── index.tsx
+    |     |     |   |   |  |  ├── style.ts
+    |     |     |   |   |  ├── menu-pages
+    |     |     |   |   |  |  ├── index.tsx
+    |     |     |   |   |  |  ├── style.ts
+    |     |     |   |   |  ├── modal
+    |     |     |   |   |  |  ├── index.tsx
+    |     |     |   |   |  |  ├── style.ts
+    |     |     |   |   |  ├── index.tsx
+    |     |     |   |   |  ├── style.ts
+    |     |     |   |   ├── marketing-digital
+    |     |     |   |   |  ├── index.tsx
+    |     |     |   |   |  ├── style.ts
+    |     |     |   |   ├── midia-page
+    |     |     |   |   |  ├── index.tsx
+    |     |     |   |   |  ├── style.ts
+    |     ├── menu
+    |     |     ├── index.tsx
+    |     |     ├── style.ts
+    |     ├── sorting
+    |     |     ├── index.tsx
+    |     |     ├── style.ts
+    │ ├── data # Arquivo json com URLs e infos dos videos
+    |     ├── data.json 
+    │ ├── fonts # Fontes externas
+    |     ├── index.ts 
+    │ ├── pages # diretório das párinas (rotas) da aplicação
+    |     ├── _app.tsx
+    |     ├── _document.tsx
+    |     ├── index.tsx
+    │ ├── styles # diretório dos arquivos CSS 
+    │ ├── types # diretório dos arquivos com as tipagens utilizadas no projeto. 
+    
+## Deployer
+- O projeto esta disponíve para visulização no seguinte link: `https://landing-page-case-leadste.vercel.app/`
+## Contato
+Se você tiver alguma dúvida ou sugestão, entre em contato:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Nome: Junior Prado 
+- E-mail: juniorcvnnn@gmail.com
+- linkedin: `www.linkedin.com/in/junior-prado-dev`

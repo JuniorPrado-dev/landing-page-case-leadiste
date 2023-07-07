@@ -3,7 +3,7 @@ import MenuPages from './menu-pages';
 import { useState } from 'react';
 import Modal from './modal';
 import { TPropsLeads } from '@/types';
-import CardVideo from './cardVideo';
+import CardVideo from './card-video';
 export default function GeracaoLeads({videos}:TPropsLeads):JSX.Element{
 	//pagina selecionada
 	const [page,setPage]=useState(0);
