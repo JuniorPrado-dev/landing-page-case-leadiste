@@ -26,7 +26,8 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 
 ## Estrutura
 - O Projeto foi escrito seguindo a estrutua de componetização, tendo como principal driretório '**src**'. Os arquivo de imagens e outros arquivos estáticos estão localizados no dirwtório '**Public**'. Segue a estrurua de diretórios apartir de src.
-
+```shell
+  $ tree
 ├── src
     └──
     │ ├── components # Componentes que seram usados no layout
@@ -87,7 +88,7 @@ Certifique-se de ter as seguintes ferramentas instaladas:
     |     ├── index.tsx
     │ ├── styles # diretório dos arquivos CSS 
     │ ├── types # diretório dos arquivos com as tipagens utilizadas no projeto. 
-    
+```
 ## Deployer
 - O projeto esta disponíve para visulização no seguinte link: `https://landing-page-case-leadste.vercel.app/`
 ## Contato
